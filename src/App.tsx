@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, FlatList, Text, StatusBar } from 'react-native';
+import { View, FlatList, Text, StatusBar, SafeAreaView } from 'react-native';
 
 import { StyleSheet } from 'react-native-unistyles';
 
@@ -72,13 +72,13 @@ const Item = ({ title }: ItemProps) => (
 );
 
 const App = () => (
-  <View style={styles.container}>
+  <SafeAreaView style={styles.container}>
     <FlatList
       data={DATA}
       renderItem={({ item }) => <Item title={item.title} />}
       keyExtractor={item => item.id}
     />
-  </View>
+  </SafeAreaView>
 );
 
 const styles = StyleSheet.create(theme => {
