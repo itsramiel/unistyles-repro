@@ -10,9 +10,12 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-native/new-app-screen": "0.80.1",
     "react": "19.1.0",
     "react-native": "0.80.1",
-    "@react-native/new-app-screen": "0.80.1"
+    "react-native-edge-to-edge": "1.6.2",
+    "react-native-nitro-modules": "0.26.4",
+    "react-native-unistyles": "3.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
